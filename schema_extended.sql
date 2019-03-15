@@ -1,3 +1,8 @@
+/*Tested in:
+Microsoft SQL Server 2017 (RTM) - 14.0.1000.169 (X64)
+Express Edition (64-bit)
+on Windows 10 Enterprise N 10.0 <X64> (Build 17134: ) (Hypervisor)*/
+
 /**
  Author: Mrin 
  Model : NorthWind
