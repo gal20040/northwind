@@ -3,9 +3,9 @@
  Model : NorthWind
 **/
 
-DROP SCHEMA IF EXISTS northwind;
+DROP DATABASE IF EXISTS northwind;
 
-CREATE SCHEMA northwind;
+CREATE DATABASE northwind;
 USE northwind;
 
 /* Table: customers */
