@@ -27,7 +27,7 @@ CREATE TABLE customers (
   country_region  VARCHAR(50) ,
   web_page        VARCHAR(250) ,
   notes           VARCHAR(250) ,
-  attachments     LONGBLOB ,
+  attachments     varbinary(max) ,
   PRIMARY KEY (id)
 );
 
@@ -50,7 +50,7 @@ CREATE TABLE employees (
   country_region  VARCHAR(50) ,
   web_page        VARCHAR(250) ,
   notes           VARCHAR(250) ,
-  attachments     LONGBLOB ,
+  attachments     varbinary(max) ,
   PRIMARY KEY (id)
 );
 
@@ -80,7 +80,7 @@ CREATE TABLE shippers (
   country_region  VARCHAR(50) ,
   web_page        VARCHAR(250) ,
   notes           VARCHAR(250) ,
-  attachments     LONGBLOB ,
+  attachments     varbinary(max) ,
   PRIMARY KEY (id)
 );
 
@@ -160,7 +160,7 @@ CREATE TABLE products (
   discontinued    TINYINT NOT NULL DEFAULT '0',
   minimum_reorder_quantity INT ,
   category        VARCHAR(50) ,
-  attachments     LONGBLOB ,
+  attachments     varbinary(max) ,
   PRIMARY KEY (id)
 );
 
@@ -183,7 +183,7 @@ CREATE TABLE suppliers (
   country_region  VARCHAR(50) ,
   web_page        VARCHAR(250) ,
   notes           VARCHAR(250) ,
-  attachments     LONGBLOB ,
+  attachments     varbinary(max) ,
   PRIMARY KEY (id)
 );
 
