@@ -72,7 +72,7 @@ CREATE TABLE order_details (
   product_id          INT ,
   quantity            DECIMAL(18,4) NOT NULL DEFAULT '0.0000',
   unit_price          DECIMAL(19,4) NULL DEFAULT '0.0000',
-  discount            DOUBLE NOT NULL DEFAULT '0',
+  discount            float NOT NULL DEFAULT '0',
   order_detail_status VARCHAR(25),
   date_allocated      DATETIME ,
   PRIMARY KEY (order_id, product_id)
