@@ -27,7 +27,6 @@ CREATE TABLE customers (
   country_region  VARCHAR(50) ,
   web_page        VARCHAR(250) ,
   notes           VARCHAR(250) ,
-  attachments     varbinary(max) ,
   PRIMARY KEY (id)
 );
 
@@ -50,7 +49,6 @@ CREATE TABLE employees (
   country_region  VARCHAR(50) ,
   web_page        VARCHAR(250) ,
   notes           VARCHAR(250) ,
-  attachments     varbinary(max) ,
   PRIMARY KEY (id)
 );
 
@@ -80,7 +78,6 @@ CREATE TABLE shippers (
   country_region  VARCHAR(50) ,
   web_page        VARCHAR(250) ,
   notes           VARCHAR(250) ,
-  attachments     varbinary(max) ,
   PRIMARY KEY (id)
 );
 
@@ -160,7 +157,6 @@ CREATE TABLE products (
   discontinued    TINYINT NOT NULL DEFAULT '0',
   minimum_reorder_quantity INT ,
   category        VARCHAR(50) ,
-  attachments     varbinary(max) ,
   PRIMARY KEY (id)
 );
 
@@ -183,7 +179,6 @@ CREATE TABLE suppliers (
   country_region  VARCHAR(50) ,
   web_page        VARCHAR(250) ,
   notes           VARCHAR(250) ,
-  attachments     varbinary(max) ,
   PRIMARY KEY (id)
 );
 
@@ -231,7 +226,7 @@ CREATE TABLE purchase_order_status (
 /* Table: inventory_transactions */
 CREATE TABLE inventory_transactions (
   id                  INT NOT NULL,
-  transaction_type    TINYINT(4) NOT NULL,
+  transaction_type    TINYINT NOT NULL,
   transaction_created_date    DATETIME ,
   transaction_modified_date   DATETIME ,
   product_id          INT NOT NULL,
@@ -290,5 +285,3 @@ ALTER TABLE purchase_order_details ADD CONSTRAINT fk_purchase_order_details__pur
 
 /* Foreign Key: invoices */
 ALTER TABLE invoices ADD CONSTRAINT fk_invoices__orders FOREIGN KEY (order_id) REFERENCES orders(id);
-
-
