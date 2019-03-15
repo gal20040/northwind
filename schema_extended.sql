@@ -103,7 +103,7 @@ CREATE TABLE orders (
   payment_type    VARCHAR(50) ,
   paid_date       DATETIME ,
   notes           VARCHAR(250) ,
-  tax_rate        DOUBLE NULL DEFAULT '0',
+  tax_rate        float NULL DEFAULT '0',
   tax_status_id   TINYINT ,
   status_id       TINYINT NULL DEFAULT '0',
   PRIMARY KEY (id)
@@ -130,7 +130,7 @@ CREATE TABLE order_details (
   product_id          INT ,
   quantity            DECIMAL(18,4) NOT NULL DEFAULT '0.0000',
   unit_price          DECIMAL(19,4) NULL DEFAULT '0.0000',
-  discount            DOUBLE NOT NULL DEFAULT '0',
+  discount            float NOT NULL DEFAULT '0',
   status_id           INT ,
   date_allocated      DATETIME ,
   purchase_order_id   INT ,
