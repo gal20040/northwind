@@ -3,128 +3,128 @@
  Model : NorthWind
 **/
 
-USE `northwind`;
+USE northwind;
 
 /* customers */
-INSERT INTO `customers` (`id`, `company`, `last_name`, `first_name`, `email_address`, `job_title`, `business_phone`, `home_phone`, `mobile_phone`, `fax_number`, `address`, `city`, `state_province`, `zip_postal_code`, `country_region`, `web_page`, `notes`, `attachments`) VALUES
-     (1,  'Company A' , 'Bedecs'           , 'Anna'      , NULL, 'Owner'                    , '(123)555-0100', NULL, NULL, '(123)555-0101', '123 1st Street' , 'Seattle'       , 'WA', '99999', 'USA', NULL, NULL, '')
-    ,(2,  'Company B' , 'Gratacos Solsona' , 'Antonio'   , NULL, 'Owner'                    , '(123)555-0100', NULL, NULL, '(123)555-0101', '123 2nd Street' , 'Boston'        , 'MA', '99999', 'USA', NULL, NULL, '')
-    ,(3,  'Company C' , 'Axen'             , 'Thomas'    , NULL, 'Purchasing Representative', '(123)555-0100', NULL, NULL, '(123)555-0101', '123 3rd Street' , 'Los Angelas'   , 'CA', '99999', 'USA', NULL, NULL, '')
-    ,(4,  'Company D' , 'Lee'              , 'Christina' , NULL, 'Purchasing Manager'       , '(123)555-0100', NULL, NULL, '(123)555-0101', '123 4th Street' , 'New York'      , 'NY', '99999', 'USA', NULL, NULL, '')
-    ,(5,  'Company E' , 'O’Donnell'        , 'Martin'    , NULL, 'Owner'                    , '(123)555-0100', NULL, NULL, '(123)555-0101', '123 5th Street' , 'Minneapolis'   , 'MN', '99999', 'USA', NULL, NULL, '')
-    ,(6,  'Company F' , 'Pérez-Olaeta'     , 'Francisco' , NULL, 'Purchasing Manager'       , '(123)555-0100', NULL, NULL, '(123)555-0101', '123 6th Street' , 'Milwaukee'     , 'WI', '99999', 'USA', NULL, NULL, '')
-    ,(7,  'Company G' , 'Xie'              , 'Ming-Yang' , NULL, 'Owner'                    , '(123)555-0100', NULL, NULL, '(123)555-0101', '123 7th Street' , 'Boise'         , 'ID', '99999', 'USA', NULL, NULL, '')
-    ,(8,  'Company H' , 'Andersen'         , 'Elizabeth' , NULL, 'Purchasing Representative', '(123)555-0100', NULL, NULL, '(123)555-0101', '123 8th Street' , 'Portland'      , 'OR', '99999', 'USA', NULL, NULL, '')
-    ,(9,  'Company I' , 'Mortensen'        , 'Sven'      , NULL, 'Purchasing Manager'       , '(123)555-0100', NULL, NULL, '(123)555-0101', '123 9th Street' , 'Salt Lake City', 'UT', '99999', 'USA', NULL, NULL, '')
-    ,(10, 'Company J' , 'Wacker'           , 'Roland'    , NULL, 'Purchasing Manager'       , '(123)555-0100', NULL, NULL, '(123)555-0101', '123 10th Street', 'Chicago'       , 'IL', '99999', 'USA', NULL, NULL, '')
-    ,(11, 'Company K' , 'Krschne'          , 'Peter'     , NULL, 'Purchasing Manager'       , '(123)555-0100', NULL, NULL, '(123)555-0101', '123 11th Street', 'Miami'         , 'FL', '99999', 'USA', NULL, NULL, '')
-    ,(12, 'Company L' , 'Edwards'          , 'John'      , NULL, 'Purchasing Manager'       , '(123)555-0100', NULL, NULL, '(123)555-0101', '123 12th Street', 'Las Vegas'     , 'NV', '99999', 'USA', NULL, NULL, '')
-    ,(13, 'Company M' , 'Ludick'           , 'Andre'     , NULL, 'Purchasing Representative', '(123)555-0100', NULL, NULL, '(123)555-0101', '456 13th Street', 'Memphis'       , 'TN', '99999', 'USA', NULL, NULL, '')
-    ,(14, 'Company N' , 'Grilo'            , 'Carlos'    , NULL, 'Purchasing Representative', '(123)555-0100', NULL, NULL, '(123)555-0101', '456 14th Street', 'Denver'        , 'CO', '99999', 'USA', NULL, NULL, '')
-    ,(15, 'Company O' , 'Kupkova'          , 'Helena'    , NULL, 'Purchasing Manager'       , '(123)555-0100', NULL, NULL, '(123)555-0101', '456 15th Street', 'Honolulu'      , 'HI', '99999', 'USA', NULL, NULL, '')
-    ,(16, 'Company P' , 'Goldschmidt'      , 'Daniel'    , NULL, 'Purchasing Representative', '(123)555-0100', NULL, NULL, '(123)555-0101', '456 16th Street', 'San Francisco' , 'CA', '99999', 'USA', NULL, NULL, '')
-    ,(17, 'Company Q' , 'Bagel'            , 'Jean Philippe', NULL, 'Owner'                 , '(123)555-0100', NULL, NULL, '(123)555-0101', '456 17th Street', 'Seattle'       , 'WA', '99999', 'USA', NULL, NULL, '')
-    ,(18, 'Company R' , 'Autier Miconi'    , 'Catherine' , NULL, 'Purchasing Representative', '(123)555-0100', NULL, NULL, '(123)555-0101', '456 18th Street', 'Boston'        , 'MA', '99999', 'USA', NULL, NULL, '')
-    ,(19, 'Company S' , 'Eggerer'          , 'Alexander' , NULL, 'Accounting Assistant'     , '(123)555-0100', NULL, NULL, '(123)555-0101', '789 19th Street', 'Los Angelas'   , 'CA', '99999', 'USA', NULL, NULL, '')
-    ,(20, 'Company T' , 'Li'               , 'George'    , NULL, 'Purchasing Manager'       , '(123)555-0100', NULL, NULL, '(123)555-0101', '789 20th Street', 'New York'      , 'NY', '99999', 'USA', NULL, NULL, '')
-    ,(21, 'Company U' , 'Tham'             , 'Bernard'   , NULL, 'Accounting Manager'       , '(123)555-0100', NULL, NULL, '(123)555-0101', '789 21th Street', 'Minneapolis'   , 'MN', '99999', 'USA', NULL, NULL, '')
-    ,(22, 'Company V' , 'Ramos'            , 'Luciana'   , NULL, 'Purchasing Assistant'     , '(123)555-0100', NULL, NULL, '(123)555-0101', '789 22th Street', 'Milwaukee'     , 'WI', '99999', 'USA', NULL, NULL, '')
-    ,(23, 'Company W' , 'Entin'            , 'Michael'   , NULL, 'Purchasing Manager'       , '(123)555-0100', NULL, NULL, '(123)555-0101', '789 23th Street', 'Portland'      , 'OR', '99999', 'USA', NULL, NULL, '')
-    ,(24, 'Company X' , 'Hasselberg'       , 'Jonas'     , NULL, 'Owner'                    , '(123)555-0100', NULL, NULL, '(123)555-0101', '789 24th Street', 'Salt Lake City', 'UT', '99999', 'USA', NULL, NULL, '')
-    ,(25, 'Company Y' , 'Rodman'           , 'John'      , NULL, 'Purchasing Manager'       , '(123)555-0100', NULL, NULL, '(123)555-0101', '789 25th Street', 'Chicago'       , 'IL', '99999', 'USA', NULL, NULL, '')
-    ,(26, 'Company Z' , 'Liu'              , 'Run'       , NULL, 'Accounting Assistant'     , '(123)555-0100', NULL, NULL, '(123)555-0101', '789 26th Street', 'Miami'         , 'FL', '99999', 'USA', NULL, NULL, '')
-    ,(27, 'Company AA', 'Toh'              , 'Karen'     , NULL, 'Purchasing Manager'       , '(123)555-0100', NULL, NULL, '(123)555-0101', '789 27th Street', 'Las Vegas'     , 'NV', '99999', 'USA', NULL, NULL, '')
-    ,(28, 'Company BB', 'Raghav'           , 'Amritansh' , NULL, 'Purchasing Manager'       , '(123)555-0100', NULL, NULL, '(123)555-0101', '789 28th Street', 'Memphis'       , 'TN', '99999', 'USA', NULL, NULL, '')
-    ,(29, 'Company CC', 'Lee'              , 'Soo Jung'  , NULL, 'Purchasing Manager'       , '(123)555-0100', NULL, NULL, '(123)555-0101', '789 29th Street', 'Denver'        , 'CO', '99999', 'USA', NULL, NULL, '');
+INSERT INTO customers (id, company, last_name, first_name, email_address, job_title, business_phone, home_phone, mobile_phone, fax_number, address, city, state_province, zip_postal_code, country_region, web_page, notes) VALUES
+     (1,  'Company A' , 'Bedecs'           , 'Anna'      , NULL, 'Owner'                    , '(123)555-0100', NULL, NULL, '(123)555-0101', '123 1st Street' , 'Seattle'       , 'WA', '99999', 'USA', NULL, NULL)
+    ,(2,  'Company B' , 'Gratacos Solsona' , 'Antonio'   , NULL, 'Owner'                    , '(123)555-0100', NULL, NULL, '(123)555-0101', '123 2nd Street' , 'Boston'        , 'MA', '99999', 'USA', NULL, NULL)
+    ,(3,  'Company C' , 'Axen'             , 'Thomas'    , NULL, 'Purchasing Representative', '(123)555-0100', NULL, NULL, '(123)555-0101', '123 3rd Street' , 'Los Angelas'   , 'CA', '99999', 'USA', NULL, NULL)
+    ,(4,  'Company D' , 'Lee'              , 'Christina' , NULL, 'Purchasing Manager'       , '(123)555-0100', NULL, NULL, '(123)555-0101', '123 4th Street' , 'New York'      , 'NY', '99999', 'USA', NULL, NULL)
+    ,(5,  'Company E' , 'O’Donnell'        , 'Martin'    , NULL, 'Owner'                    , '(123)555-0100', NULL, NULL, '(123)555-0101', '123 5th Street' , 'Minneapolis'   , 'MN', '99999', 'USA', NULL, NULL)
+    ,(6,  'Company F' , 'Pérez-Olaeta'     , 'Francisco' , NULL, 'Purchasing Manager'       , '(123)555-0100', NULL, NULL, '(123)555-0101', '123 6th Street' , 'Milwaukee'     , 'WI', '99999', 'USA', NULL, NULL)
+    ,(7,  'Company G' , 'Xie'              , 'Ming-Yang' , NULL, 'Owner'                    , '(123)555-0100', NULL, NULL, '(123)555-0101', '123 7th Street' , 'Boise'         , 'ID', '99999', 'USA', NULL, NULL)
+    ,(8,  'Company H' , 'Andersen'         , 'Elizabeth' , NULL, 'Purchasing Representative', '(123)555-0100', NULL, NULL, '(123)555-0101', '123 8th Street' , 'Portland'      , 'OR', '99999', 'USA', NULL, NULL)
+    ,(9,  'Company I' , 'Mortensen'        , 'Sven'      , NULL, 'Purchasing Manager'       , '(123)555-0100', NULL, NULL, '(123)555-0101', '123 9th Street' , 'Salt Lake City', 'UT', '99999', 'USA', NULL, NULL)
+    ,(10, 'Company J' , 'Wacker'           , 'Roland'    , NULL, 'Purchasing Manager'       , '(123)555-0100', NULL, NULL, '(123)555-0101', '123 10th Street', 'Chicago'       , 'IL', '99999', 'USA', NULL, NULL)
+    ,(11, 'Company K' , 'Krschne'          , 'Peter'     , NULL, 'Purchasing Manager'       , '(123)555-0100', NULL, NULL, '(123)555-0101', '123 11th Street', 'Miami'         , 'FL', '99999', 'USA', NULL, NULL)
+    ,(12, 'Company L' , 'Edwards'          , 'John'      , NULL, 'Purchasing Manager'       , '(123)555-0100', NULL, NULL, '(123)555-0101', '123 12th Street', 'Las Vegas'     , 'NV', '99999', 'USA', NULL, NULL)
+    ,(13, 'Company M' , 'Ludick'           , 'Andre'     , NULL, 'Purchasing Representative', '(123)555-0100', NULL, NULL, '(123)555-0101', '456 13th Street', 'Memphis'       , 'TN', '99999', 'USA', NULL, NULL)
+    ,(14, 'Company N' , 'Grilo'            , 'Carlos'    , NULL, 'Purchasing Representative', '(123)555-0100', NULL, NULL, '(123)555-0101', '456 14th Street', 'Denver'        , 'CO', '99999', 'USA', NULL, NULL)
+    ,(15, 'Company O' , 'Kupkova'          , 'Helena'    , NULL, 'Purchasing Manager'       , '(123)555-0100', NULL, NULL, '(123)555-0101', '456 15th Street', 'Honolulu'      , 'HI', '99999', 'USA', NULL, NULL)
+    ,(16, 'Company P' , 'Goldschmidt'      , 'Daniel'    , NULL, 'Purchasing Representative', '(123)555-0100', NULL, NULL, '(123)555-0101', '456 16th Street', 'San Francisco' , 'CA', '99999', 'USA', NULL, NULL)
+    ,(17, 'Company Q' , 'Bagel'            , 'Jean Philippe', NULL, 'Owner'                 , '(123)555-0100', NULL, NULL, '(123)555-0101', '456 17th Street', 'Seattle'       , 'WA', '99999', 'USA', NULL, NULL)
+    ,(18, 'Company R' , 'Autier Miconi'    , 'Catherine' , NULL, 'Purchasing Representative', '(123)555-0100', NULL, NULL, '(123)555-0101', '456 18th Street', 'Boston'        , 'MA', '99999', 'USA', NULL, NULL)
+    ,(19, 'Company S' , 'Eggerer'          , 'Alexander' , NULL, 'Accounting Assistant'     , '(123)555-0100', NULL, NULL, '(123)555-0101', '789 19th Street', 'Los Angelas'   , 'CA', '99999', 'USA', NULL, NULL)
+    ,(20, 'Company T' , 'Li'               , 'George'    , NULL, 'Purchasing Manager'       , '(123)555-0100', NULL, NULL, '(123)555-0101', '789 20th Street', 'New York'      , 'NY', '99999', 'USA', NULL, NULL)
+    ,(21, 'Company U' , 'Tham'             , 'Bernard'   , NULL, 'Accounting Manager'       , '(123)555-0100', NULL, NULL, '(123)555-0101', '789 21th Street', 'Minneapolis'   , 'MN', '99999', 'USA', NULL, NULL)
+    ,(22, 'Company V' , 'Ramos'            , 'Luciana'   , NULL, 'Purchasing Assistant'     , '(123)555-0100', NULL, NULL, '(123)555-0101', '789 22th Street', 'Milwaukee'     , 'WI', '99999', 'USA', NULL, NULL)
+    ,(23, 'Company W' , 'Entin'            , 'Michael'   , NULL, 'Purchasing Manager'       , '(123)555-0100', NULL, NULL, '(123)555-0101', '789 23th Street', 'Portland'      , 'OR', '99999', 'USA', NULL, NULL)
+    ,(24, 'Company X' , 'Hasselberg'       , 'Jonas'     , NULL, 'Owner'                    , '(123)555-0100', NULL, NULL, '(123)555-0101', '789 24th Street', 'Salt Lake City', 'UT', '99999', 'USA', NULL, NULL)
+    ,(25, 'Company Y' , 'Rodman'           , 'John'      , NULL, 'Purchasing Manager'       , '(123)555-0100', NULL, NULL, '(123)555-0101', '789 25th Street', 'Chicago'       , 'IL', '99999', 'USA', NULL, NULL)
+    ,(26, 'Company Z' , 'Liu'              , 'Run'       , NULL, 'Accounting Assistant'     , '(123)555-0100', NULL, NULL, '(123)555-0101', '789 26th Street', 'Miami'         , 'FL', '99999', 'USA', NULL, NULL)
+    ,(27, 'Company AA', 'Toh'              , 'Karen'     , NULL, 'Purchasing Manager'       , '(123)555-0100', NULL, NULL, '(123)555-0101', '789 27th Street', 'Las Vegas'     , 'NV', '99999', 'USA', NULL, NULL)
+    ,(28, 'Company BB', 'Raghav'           , 'Amritansh' , NULL, 'Purchasing Manager'       , '(123)555-0100', NULL, NULL, '(123)555-0101', '789 28th Street', 'Memphis'       , 'TN', '99999', 'USA', NULL, NULL)
+    ,(29, 'Company CC', 'Lee'              , 'Soo Jung'  , NULL, 'Purchasing Manager'       , '(123)555-0100', NULL, NULL, '(123)555-0101', '789 29th Street', 'Denver'        , 'CO', '99999', 'USA', NULL, NULL);
 
 /* 'employees' */
-INSERT INTO `employees` (`id`, `company`, `last_name`, `first_name`, `email_address`, `job_title`, `business_phone`, `home_phone`, `mobile_phone`, `fax_number`, `address`, `city`, `state_province`, `zip_postal_code`, `country_region`, `web_page`, `notes`, `attachments`) VALUES 
-     (1, 'Northwind Traders', 'Freehafer', 'Nancy'  , 'nancy@northwindtraders.com'  , 'Sales Representative' , '(123)555-0100', '(123)555-0102', NULL, '(123)555-0103', '123 1st Avenue', 'Seattle' , 'WA', '99999', 'USA', '#http://northwindtraders.com#', NULL, '')
-    ,(2, 'Northwind Traders', 'Cencini'  , 'Andrew' , 'andrew@northwindtraders.com' , 'Vice President, Sales', '(123)555-0100', '(123)555-0102', NULL, '(123)555-0103', '123 2nd Avenue', 'Bellevue', 'WA', '99999', 'USA', 'http://northwindtraders.com#http://northwindtraders.com/#', 'Joined the company as a sales representative, was promoted to sales manager and was then named vice president of sales.', '')
-    ,(3, 'Northwind Traders', 'Kotas'    , 'Jan'    , 'jan@northwindtraders.com'    , 'Sales Representative' , '(123)555-0100', '(123)555-0102', NULL, '(123)555-0103', '123 3rd Avenue', 'Redmond' , 'WA', '99999', 'USA', 'http://northwindtraders.com#http://northwindtraders.com/#', 'Was hired as a sales associate and was promoted to sales representative.', '')
-    ,(4, 'Northwind Traders', 'Sergienko', 'Mariya' , 'mariya@northwindtraders.com' , 'Sales Representative' , '(123)555-0100', '(123)555-0102', NULL, '(123)555-0103', '123 4th Avenue', 'Kirkland', 'WA', '99999', 'USA', 'http://northwindtraders.com#http://northwindtraders.com/#', NULL, '')
-    ,(5, 'Northwind Traders', 'Thorpe'   , 'Steven' , 'steven@northwindtraders.com' , 'Sales Manager'        , '(123)555-0100', '(123)555-0102', NULL, '(123)555-0103', '123 5th Avenue', 'Seattle' , 'WA', '99999', 'USA', 'http://northwindtraders.com#http://northwindtraders.com/#', 'Joined the company as a sales representative and was promoted to sales manager.  Fluent in French.', '')
-    ,(6, 'Northwind Traders', 'Neipper'  , 'Michael', 'michael@northwindtraders.com', 'Sales Representative' , '(123)555-0100', '(123)555-0102', NULL, '(123)555-0103', '123 6th Avenue', 'Redmond' , 'WA', '99999', 'USA', 'http://northwindtraders.com#http://northwindtraders.com/#', 'Fluent in Japanese and can read and write French, Portuguese, and Spanish.', '')
-    ,(7, 'Northwind Traders', 'Zare'     , 'Robert' , 'robert@northwindtraders.com' , 'Sales Representative' , '(123)555-0100', '(123)555-0102', NULL, '(123)555-0103', '123 7th Avenue', 'Seattle' , 'WA', '99999', 'USA', 'http://northwindtraders.com#http://northwindtraders.com/#', NULL, '')
-    ,(8, 'Northwind Traders', 'Giussani' , 'Laura'  , 'laura@northwindtraders.com'  , 'Sales Coordinator'    , '(123)555-0100', '(123)555-0102', NULL, '(123)555-0103', '123 8th Avenue', 'Redmond' , 'WA', '99999', 'USA', 'http://northwindtraders.com#http://northwindtraders.com/#', 'Reads and writes French.', '')
-    ,(9, 'Northwind Traders', 'Hellung-Larsen', 'Anne', 'anne@northwindtraders.com' , 'Sales Representative' , '(123)555-0100', '(123)555-0102', NULL, '(123)555-0103', '123 9th Avenue', 'Seattle' , 'WA', '99999', 'USA', 'http://northwindtraders.com#http://northwindtraders.com/#', 'Fluent in French and German.', '');
+INSERT INTO employees (id, company, last_name, first_name, email_address, job_title, business_phone, home_phone, mobile_phone, fax_number, address, city, state_province, zip_postal_code, country_region, web_page, notes) VALUES
+     (1, 'Northwind Traders', 'Freehafer', 'Nancy'  , 'nancy@northwindtraders.com'  , 'Sales Representative' , '(123)555-0100', '(123)555-0102', NULL, '(123)555-0103', '123 1st Avenue', 'Seattle' , 'WA', '99999', 'USA', '#http://northwindtraders.com#', NULL)
+    ,(2, 'Northwind Traders', 'Cencini'  , 'Andrew' , 'andrew@northwindtraders.com' , 'Vice President, Sales', '(123)555-0100', '(123)555-0102', NULL, '(123)555-0103', '123 2nd Avenue', 'Bellevue', 'WA', '99999', 'USA', 'http://northwindtraders.com#http://northwindtraders.com/#', 'Joined the company as a sales representative, was promoted to sales manager and was then named vice president of sales.')
+    ,(3, 'Northwind Traders', 'Kotas'    , 'Jan'    , 'jan@northwindtraders.com'    , 'Sales Representative' , '(123)555-0100', '(123)555-0102', NULL, '(123)555-0103', '123 3rd Avenue', 'Redmond' , 'WA', '99999', 'USA', 'http://northwindtraders.com#http://northwindtraders.com/#', 'Was hired as a sales associate and was promoted to sales representative.')
+    ,(4, 'Northwind Traders', 'Sergienko', 'Mariya' , 'mariya@northwindtraders.com' , 'Sales Representative' , '(123)555-0100', '(123)555-0102', NULL, '(123)555-0103', '123 4th Avenue', 'Kirkland', 'WA', '99999', 'USA', 'http://northwindtraders.com#http://northwindtraders.com/#', NULL)
+    ,(5, 'Northwind Traders', 'Thorpe'   , 'Steven' , 'steven@northwindtraders.com' , 'Sales Manager'        , '(123)555-0100', '(123)555-0102', NULL, '(123)555-0103', '123 5th Avenue', 'Seattle' , 'WA', '99999', 'USA', 'http://northwindtraders.com#http://northwindtraders.com/#', 'Joined the company as a sales representative and was promoted to sales manager.  Fluent in French.')
+    ,(6, 'Northwind Traders', 'Neipper'  , 'Michael', 'michael@northwindtraders.com', 'Sales Representative' , '(123)555-0100', '(123)555-0102', NULL, '(123)555-0103', '123 6th Avenue', 'Redmond' , 'WA', '99999', 'USA', 'http://northwindtraders.com#http://northwindtraders.com/#', 'Fluent in Japanese and can read and write French, Portuguese, and Spanish.')
+    ,(7, 'Northwind Traders', 'Zare'     , 'Robert' , 'robert@northwindtraders.com' , 'Sales Representative' , '(123)555-0100', '(123)555-0102', NULL, '(123)555-0103', '123 7th Avenue', 'Seattle' , 'WA', '99999', 'USA', 'http://northwindtraders.com#http://northwindtraders.com/#', NULL)
+    ,(8, 'Northwind Traders', 'Giussani' , 'Laura'  , 'laura@northwindtraders.com'  , 'Sales Coordinator'    , '(123)555-0100', '(123)555-0102', NULL, '(123)555-0103', '123 8th Avenue', 'Redmond' , 'WA', '99999', 'USA', 'http://northwindtraders.com#http://northwindtraders.com/#', 'Reads and writes French.')
+    ,(9, 'Northwind Traders', 'Hellung-Larsen', 'Anne', 'anne@northwindtraders.com' , 'Sales Representative' , '(123)555-0100', '(123)555-0102', NULL, '(123)555-0103', '123 9th Avenue', 'Seattle' , 'WA', '99999', 'USA', 'http://northwindtraders.com#http://northwindtraders.com/#', 'Fluent in French and German.');
 
 /* products */
-INSERT INTO `products` (`supplier_ids`, `id`, `product_code`, `product_name`, `description`, `standard_cost`, `list_price`, `reorder_level`, `target_level`, `quantity_per_unit`, `discontinued`, `minimum_reorder_quantity`, `category`, `attachments`) VALUES 
-     ('4' , 1 , 'NWTB-1'   , 'Northwind Traders Chai'              , NULL, 13.50, 18   , 10 , 40 , '10 boxes x 20 bags' , 0, 10  , 'Beverages' , '')
-    ,('10', 3 , 'NWTCO-3'  , 'Northwind Traders Syrup'             , NULL, 7.50 , 10   , 25 , 100, '12 - 550 ml bottles', 0, 25  , 'Condiments', '')
-    ,('10', 4 , 'NWTCO-4'  , 'Northwind Traders Cajun Seasoning'   , NULL, 16.5 , 22   , 10 , 40 , '48 - 6 oz jars'     , 0, 10  , 'Condiments', '')
-    ,('10', 5 , 'NWTO-5'   , 'Northwind Traders Olive Oil'         , NULL, 16.25, 21.35, 10 , 40 , '36 boxes'           , 0, 10  , 'Oil'       , '')
-    ,('26', 6 , 'NWTJP-6'  , 'Northwind Traders Boysenberry Spread', NULL, 18.75, 25   , 25 , 100, '12 - 8 oz jars'     , 0, 25  , 'Jams, Preserves', '')
-    ,('2' , 7 , 'NWTDFN-7' , 'Northwind Traders Dried Pears'       , NULL, 22.50, 30   , 10 , 40 , '12 - 1 lb pkgs.'    , 0, 10  , 'Dried Fruit & Nuts', '')
-    ,('8' , 8 , 'NWTS-8'   , 'Northwind Traders Curry Sauce'       , NULL, 30   , 40   , 10 , 40 , '12 - 12 oz jars'    , 0, 10  , 'Sauces'    , '')
-    ,('26', 14, 'NWTDFN-14', 'Northwind Traders Walnuts'           , NULL, 17.75, 23.25, 10 , 40 , '40 - 100 g pkgs.'   , 0, 10  , 'Dried Fruit & Nuts', '')
-    ,('6' , 17, 'NWTCFV-17', 'Northwind Traders Fruit Cocktail'    , NULL, 29.25, 39   , 10 , 40 , '15.25 OZ'           , 0, 10  , 'Canned Fruit & Vegetables', '')
-    ,('1' , 19, 'NWTBGM-19', 'Northwind Traders Chocolate Biscuits Mix', NULL, 6, 9.20 , 5  , 20 , '10 boxes x 12 pieces', 0, 5  , 'Baked Goods & Mixes', '')
-    ,('26', 20, 'NWTJP-6'  , 'Northwind Traders Marmalade'         , NULL, 60.75, 81   , 10 , 40 , '30 gift boxes'      , 0, 10  , 'Jams, Preserves', '')
-    ,('1' , 21, 'NWTBGM-21', 'Northwind Traders Scones'            , NULL, 7.50 , 10   , 5  , 20 , '24 pkgs. x 4 pieces', 0, 5   , 'Baked Goods & Mixes', '')
-    ,('4' , 34, 'NWTB-34'  , 'Northwind Traders Beer'              , NULL, 10.50, 14   , 15 , 60 , '24 - 12 oz bottles' , 0, 15  , 'Beverages', '')
-    ,('7' , 40, 'NWTCM-40' , 'Northwind Traders Crab Meat'         , NULL, 13.80, 18.40, 30 , 120, '24 - 4 oz tins'     , 0, 30  , 'Canned Meat', '')
-    ,('6' , 41, 'NWTSO-41' , 'Northwind Traders Clam Chowder'      , NULL, 7.75 , 9.65 , 10 , 40 , '12 - 12 oz cans'    , 0, 10  , 'Soups', '')
-    ,('34', 43, 'NWTB-43'  , 'Northwind Traders Coffee'            , NULL, 34.50, 46   , 25 , 100, '16 - 500 g tins'    , 0, 25  , 'Beverages', '')
-    ,('10', 48, 'NWTCA-48' , 'Northwind Traders Chocolate'         , NULL, 9.25 , 12.75, 25 , 100, '10 pkgs'            , 0, 25  , 'Candy', '')
-    ,('2' , 51, 'NWTDFN-51', 'Northwind Traders Dried Apples'      , NULL, 39.75, 53   , 10 , 40 , '50 - 300 g pkgs.'   , 0, 10  , 'Dried Fruit & Nuts', '')
-    ,('1' , 52, 'NWTG-52'  , 'Northwind Traders Long Grain Rice'   , NULL, 5.25 , 7    , 25 , 100, '16 - 2 kg boxes'    , 0, 25  , 'Grains', '')
-    ,('1' , 56, 'NWTP-56'  , 'Northwind Traders Gnocchi'           , NULL, 28.50, 38   , 30 , 120, '24 - 250 g pkgs.'   , 0, 30  , 'Pasta', '')
-    ,('1' , 57, 'NWTP-57'  , 'Northwind Traders Ravioli'           , NULL, 14.25, 19.50, 20 , 80 , '24 - 250 g pkgs.'   , 0, 20  , 'Pasta', '')
-    ,('8' , 65, 'NWTS-65'  , 'Northwind Traders Hot Pepper Sauce'  , NULL, 15.75, 21.05, 10 , 40 , '32 - 8 oz bottles'  , 0, 10  , 'Sauces', '')
-    ,('8' , 66, 'NWTS-66'  , 'Northwind Traders Tomato Sauce'      , NULL, 12.75, 17   , 20 , 80 , '24 - 8 oz jars'     , 0, 20  , 'Sauces', '')
-    ,('5' , 72, 'NWTD-72'  , 'Northwind Traders Mozzarella'        , NULL, 26.10, 34.8 , 10 , 40 , '24 - 200 g pkgs.'   , 0, 10  , 'Dairy products', '')
-    ,('26', 74, 'NWTDFN-74', 'Northwind Traders Almonds'           , NULL, 7.50 , 10   , 5  , 20 , '5 kg pkg.'          , 0, 5   , 'Dried Fruit & Nuts', '')
-    ,('10', 77, 'NWTCO-77' , 'Northwind Traders Mustard'           , NULL, 9.75 , 13   , 15 , 60 , '12 boxes'           , 0, 15  , 'Condiments', '')
-    ,('2' , 80, 'NWTDFN-80', 'Northwind Traders Dried Plums'       , NULL, 3    , 3.50 , 50 , 75 , '1 lb bag'           , 0, 25  , 'Dried Fruit & Nuts', '')
-    ,('3' , 81, 'NWTB-81'  , 'Northwind Traders Green Tea'         , NULL, 2    , 2.99 , 100, 125, '20 bags per box'    , 0, 25  , 'Beverages', '')
-    ,('1' , 82, 'NWTC-82'  , 'Northwind Traders Granola'           , NULL, 2    , 4    , 20 , 100, NULL                 , 0, NULL, 'Cereal', '')
-    ,('9' , 83, 'NWTCS-83' , 'Northwind Traders Potato Chips'      , NULL, .50  , 1.80 , 30 , 200, NULL                 , 0, NULL, 'Chips, Snacks', '')
-    ,('1' , 85, 'NWTBGM-85', 'Northwind Traders Brownie Mix'       , NULL, 9    , 12.49, 10 , 20 , '3 boxes'            , 0, 5   , 'Baked Goods & Mixes', '')
-    ,('1' , 86, 'NWTBGM-86', 'Northwind Traders Cake Mix'          , NULL, 10.50, 15.99, 10 , 20 , '4 boxes'            , 0, 5   , 'Baked Goods & Mixes', '')
-    ,('7' , 87, 'NWTB-87'  , 'Northwind Traders Tea'               , NULL, 2    , 40   , 20 , 50 , '100 count per box'  , 0, NULL, 'Beverages', '')
-    ,('6' , 88, 'NWTCFV-88', 'Northwind Traders Pears'             , NULL, 1    , 1.3  , 10 , 40 , '15.25 OZ'           , 0, NULL, 'Canned Fruit & Vegetables', '')
-    ,('6' , 89, 'NWTCFV-89', 'Northwind Traders Peaches'           , NULL, 1    , 1.5  , 10 , 40 , '15.25 OZ'           , 0, NULL, 'Canned Fruit & Vegetables', '')
-    ,('6' , 90, 'NWTCFV-90', 'Northwind Traders Pineapple'         , NULL, 1    , 1.8  , 10 , 40 , '15.25 OZ'           , 0, NULL, 'Canned Fruit & Vegetables', '')
-    ,('6' , 91, 'NWTCFV-91', 'Northwind Traders Cherry Pie Filling', NULL, 1    , 2    , 10 , 40 , '15.25 OZ'           , 0, NULL, 'Canned Fruit & Vegetables', '')
-    ,('6' , 92, 'NWTCFV-92', 'Northwind Traders Green Beans'       , NULL, 1    , 1.20 , 10 , 40 , '14.5 OZ'            , 0, NULL, 'Canned Fruit & Vegetables', '')
-    ,('6' , 93, 'NWTCFV-93', 'Northwind Traders Corn'              , NULL, 1    , 1.20 , 10 , 40 , '14.5 OZ'            , 0, NULL, 'Canned Fruit & Vegetables', '')
-    ,('6' , 94, 'NWTCFV-94', 'Northwind Traders Peas'              , NULL, 1    , 1.50 , 10 , 40 , '14.5 OZ'            , 0, NULL, 'Canned Fruit & Vegetables', '')
-    ,('7' , 95, 'NWTCM-95' , 'Northwind Traders Tuna Fish'         , NULL, .50  , 2    , 30 , 50 , '5 oz'               , 0, NULL, 'Canned Meat', '')
-    ,('7' , 96, 'NWTCM-96' , 'Northwind Traders Smoked Salmon'     , NULL, 2    , 4    , 30 , 50 , '5 oz'               , 0, NULL, 'Canned Meat', '')
-    ,('1' , 97, 'NWTC-82'  , 'Northwind Traders Hot Cereal'        , NULL, 3    , 5    , 50 , 200, NULL                 , 0, NULL, 'Cereal', '')
-    ,('6' , 98, 'NWTSO-98' , 'Northwind Traders Vegetable Soup'    , NULL, 1    , 1.89 , 100, 200, NULL                 , 0, NULL, 'Soups', '')
-    ,('6' , 99, 'NWTSO-99' , 'Northwind Traders Chicken Soup'      , NULL, 1    , 1.95 , 100, 200, NULL                 , 0, NULL, 'Soups', '');
+INSERT INTO products (supplier_ids, id, product_code, product_name, description, standard_cost, list_price, reorder_level, target_level, quantity_per_unit, discontinued, minimum_reorder_quantity, category) VALUES
+     ('4' , 1 , 'NWTB-1'   , 'Northwind Traders Chai'              , NULL, 13.50, 18   , 10 , 40 , '10 boxes x 20 bags' , 0, 10  , 'Beverages' )
+    ,('10', 3 , 'NWTCO-3'  , 'Northwind Traders Syrup'             , NULL, 7.50 , 10   , 25 , 100, '12 - 550 ml bottles', 0, 25  , 'Condiments')
+    ,('10', 4 , 'NWTCO-4'  , 'Northwind Traders Cajun Seasoning'   , NULL, 16.5 , 22   , 10 , 40 , '48 - 6 oz jars'     , 0, 10  , 'Condiments')
+    ,('10', 5 , 'NWTO-5'   , 'Northwind Traders Olive Oil'         , NULL, 16.25, 21.35, 10 , 40 , '36 boxes'           , 0, 10  , 'Oil'       )
+    ,('26', 6 , 'NWTJP-6'  , 'Northwind Traders Boysenberry Spread', NULL, 18.75, 25   , 25 , 100, '12 - 8 oz jars'     , 0, 25  , 'Jams, Preserves')
+    ,('2' , 7 , 'NWTDFN-7' , 'Northwind Traders Dried Pears'       , NULL, 22.50, 30   , 10 , 40 , '12 - 1 lb pkgs.'    , 0, 10  , 'Dried Fruit & Nuts')
+    ,('8' , 8 , 'NWTS-8'   , 'Northwind Traders Curry Sauce'       , NULL, 30   , 40   , 10 , 40 , '12 - 12 oz jars'    , 0, 10  , 'Sauces'    )
+    ,('26', 14, 'NWTDFN-14', 'Northwind Traders Walnuts'           , NULL, 17.75, 23.25, 10 , 40 , '40 - 100 g pkgs.'   , 0, 10  , 'Dried Fruit & Nuts')
+    ,('6' , 17, 'NWTCFV-17', 'Northwind Traders Fruit Cocktail'    , NULL, 29.25, 39   , 10 , 40 , '15.25 OZ'           , 0, 10  , 'Canned Fruit & Vegetables')
+    ,('1' , 19, 'NWTBGM-19', 'Northwind Traders Chocolate Biscuits Mix', NULL, 6, 9.20 , 5  , 20 , '10 boxes x 12 pieces', 0, 5  , 'Baked Goods & Mixes')
+    ,('26', 20, 'NWTJP-6'  , 'Northwind Traders Marmalade'         , NULL, 60.75, 81   , 10 , 40 , '30 gift boxes'      , 0, 10  , 'Jams, Preserves')
+    ,('1' , 21, 'NWTBGM-21', 'Northwind Traders Scones'            , NULL, 7.50 , 10   , 5  , 20 , '24 pkgs. x 4 pieces', 0, 5   , 'Baked Goods & Mixes')
+    ,('4' , 34, 'NWTB-34'  , 'Northwind Traders Beer'              , NULL, 10.50, 14   , 15 , 60 , '24 - 12 oz bottles' , 0, 15  , 'Beverages')
+    ,('7' , 40, 'NWTCM-40' , 'Northwind Traders Crab Meat'         , NULL, 13.80, 18.40, 30 , 120, '24 - 4 oz tins'     , 0, 30  , 'Canned Meat')
+    ,('6' , 41, 'NWTSO-41' , 'Northwind Traders Clam Chowder'      , NULL, 7.75 , 9.65 , 10 , 40 , '12 - 12 oz cans'    , 0, 10  , 'Soups')
+    ,('34', 43, 'NWTB-43'  , 'Northwind Traders Coffee'            , NULL, 34.50, 46   , 25 , 100, '16 - 500 g tins'    , 0, 25  , 'Beverages')
+    ,('10', 48, 'NWTCA-48' , 'Northwind Traders Chocolate'         , NULL, 9.25 , 12.75, 25 , 100, '10 pkgs'            , 0, 25  , 'Candy')
+    ,('2' , 51, 'NWTDFN-51', 'Northwind Traders Dried Apples'      , NULL, 39.75, 53   , 10 , 40 , '50 - 300 g pkgs.'   , 0, 10  , 'Dried Fruit & Nuts')
+    ,('1' , 52, 'NWTG-52'  , 'Northwind Traders Long Grain Rice'   , NULL, 5.25 , 7    , 25 , 100, '16 - 2 kg boxes'    , 0, 25  , 'Grains')
+    ,('1' , 56, 'NWTP-56'  , 'Northwind Traders Gnocchi'           , NULL, 28.50, 38   , 30 , 120, '24 - 250 g pkgs.'   , 0, 30  , 'Pasta')
+    ,('1' , 57, 'NWTP-57'  , 'Northwind Traders Ravioli'           , NULL, 14.25, 19.50, 20 , 80 , '24 - 250 g pkgs.'   , 0, 20  , 'Pasta')
+    ,('8' , 65, 'NWTS-65'  , 'Northwind Traders Hot Pepper Sauce'  , NULL, 15.75, 21.05, 10 , 40 , '32 - 8 oz bottles'  , 0, 10  , 'Sauces')
+    ,('8' , 66, 'NWTS-66'  , 'Northwind Traders Tomato Sauce'      , NULL, 12.75, 17   , 20 , 80 , '24 - 8 oz jars'     , 0, 20  , 'Sauces')
+    ,('5' , 72, 'NWTD-72'  , 'Northwind Traders Mozzarella'        , NULL, 26.10, 34.8 , 10 , 40 , '24 - 200 g pkgs.'   , 0, 10  , 'Dairy products')
+    ,('26', 74, 'NWTDFN-74', 'Northwind Traders Almonds'           , NULL, 7.50 , 10   , 5  , 20 , '5 kg pkg.'          , 0, 5   , 'Dried Fruit & Nuts')
+    ,('10', 77, 'NWTCO-77' , 'Northwind Traders Mustard'           , NULL, 9.75 , 13   , 15 , 60 , '12 boxes'           , 0, 15  , 'Condiments')
+    ,('2' , 80, 'NWTDFN-80', 'Northwind Traders Dried Plums'       , NULL, 3    , 3.50 , 50 , 75 , '1 lb bag'           , 0, 25  , 'Dried Fruit & Nuts')
+    ,('3' , 81, 'NWTB-81'  , 'Northwind Traders Green Tea'         , NULL, 2    , 2.99 , 100, 125, '20 bags per box'    , 0, 25  , 'Beverages')
+    ,('1' , 82, 'NWTC-82'  , 'Northwind Traders Granola'           , NULL, 2    , 4    , 20 , 100, NULL                 , 0, NULL, 'Cereal')
+    ,('9' , 83, 'NWTCS-83' , 'Northwind Traders Potato Chips'      , NULL, .50  , 1.80 , 30 , 200, NULL                 , 0, NULL, 'Chips, Snacks')
+    ,('1' , 85, 'NWTBGM-85', 'Northwind Traders Brownie Mix'       , NULL, 9    , 12.49, 10 , 20 , '3 boxes'            , 0, 5   , 'Baked Goods & Mixes')
+    ,('1' , 86, 'NWTBGM-86', 'Northwind Traders Cake Mix'          , NULL, 10.50, 15.99, 10 , 20 , '4 boxes'            , 0, 5   , 'Baked Goods & Mixes')
+    ,('7' , 87, 'NWTB-87'  , 'Northwind Traders Tea'               , NULL, 2    , 40   , 20 , 50 , '100 count per box'  , 0, NULL, 'Beverages')
+    ,('6' , 88, 'NWTCFV-88', 'Northwind Traders Pears'             , NULL, 1    , 1.3  , 10 , 40 , '15.25 OZ'           , 0, NULL, 'Canned Fruit & Vegetables')
+    ,('6' , 89, 'NWTCFV-89', 'Northwind Traders Peaches'           , NULL, 1    , 1.5  , 10 , 40 , '15.25 OZ'           , 0, NULL, 'Canned Fruit & Vegetables')
+    ,('6' , 90, 'NWTCFV-90', 'Northwind Traders Pineapple'         , NULL, 1    , 1.8  , 10 , 40 , '15.25 OZ'           , 0, NULL, 'Canned Fruit & Vegetables')
+    ,('6' , 91, 'NWTCFV-91', 'Northwind Traders Cherry Pie Filling', NULL, 1    , 2    , 10 , 40 , '15.25 OZ'           , 0, NULL, 'Canned Fruit & Vegetables')
+    ,('6' , 92, 'NWTCFV-92', 'Northwind Traders Green Beans'       , NULL, 1    , 1.20 , 10 , 40 , '14.5 OZ'            , 0, NULL, 'Canned Fruit & Vegetables')
+    ,('6' , 93, 'NWTCFV-93', 'Northwind Traders Corn'              , NULL, 1    , 1.20 , 10 , 40 , '14.5 OZ'            , 0, NULL, 'Canned Fruit & Vegetables')
+    ,('6' , 94, 'NWTCFV-94', 'Northwind Traders Peas'              , NULL, 1    , 1.50 , 10 , 40 , '14.5 OZ'            , 0, NULL, 'Canned Fruit & Vegetables')
+    ,('7' , 95, 'NWTCM-95' , 'Northwind Traders Tuna Fish'         , NULL, .50  , 2    , 30 , 50 , '5 oz'               , 0, NULL, 'Canned Meat')
+    ,('7' , 96, 'NWTCM-96' , 'Northwind Traders Smoked Salmon'     , NULL, 2    , 4    , 30 , 50 , '5 oz'               , 0, NULL, 'Canned Meat')
+    ,('1' , 97, 'NWTC-82'  , 'Northwind Traders Hot Cereal'        , NULL, 3    , 5    , 50 , 200, NULL                 , 0, NULL, 'Cereal')
+    ,('6' , 98, 'NWTSO-98' , 'Northwind Traders Vegetable Soup'    , NULL, 1    , 1.89 , 100, 200, NULL                 , 0, NULL, 'Soups')
+    ,('6' , 99, 'NWTSO-99' , 'Northwind Traders Chicken Soup'      , NULL, 1    , 1.95 , 100, 200, NULL                 , 0, NULL, 'Soups');
 
 /* suppliers */
-INSERT INTO `suppliers` (`id`, `company`, `last_name`, `first_name`, `email_address`, `job_title`, `business_phone`, `home_phone`, `mobile_phone`, `fax_number`, `address`, `city`, `state_province`, `zip_postal_code`, `country_region`, `web_page`, `notes`, `attachments`) VALUES 
-     (1, 'Supplier A', 'Andersen'  , 'Elizabeth A.'  , NULL, 'Sales Manager'       , NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '')
-    ,(2, 'Supplier B', 'Weiler'    , 'Cornelia'      , NULL, 'Sales Manager'       , NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '')
-    ,(3, 'Supplier C', 'Kelley'    , 'Madeleine'     , NULL, 'Sales Representative', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '')
-    ,(4, 'Supplier D', 'Sato'      , 'Naoki'         , NULL, 'Marketing Manager'   , NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '')
-    ,(5, 'Supplier E', 'Hernandez-Echevarria','Amaya', NULL, 'Sales Manager'       , NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '')
-    ,(6, 'Supplier F', 'Hayakawa'  , 'Satomi'        , NULL, 'Marketing Assistant' , NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '')
-    ,(7, 'Supplier G', 'Glasson'   , 'Stuart'        , NULL, 'Marketing Manager'   , NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '')
-    ,(8, 'Supplier H', 'Dunton'    , 'Bryn Paul'     , NULL, 'Sales Representative', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '')
-    ,(9, 'Supplier I', 'Sandberg'  , 'Mikael'        , NULL, 'Sales Manager'       , NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '')
-    ,(10,'Supplier J', 'Sousa'     , 'Luis'          , NULL, 'Sales Manager'       , NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '');
+INSERT INTO suppliers (id, company, last_name, first_name, email_address, job_title, business_phone, home_phone, mobile_phone, fax_number, address, city, state_province, zip_postal_code, country_region, web_page, notes) VALUES
+     (1, 'Supplier A', 'Andersen'  , 'Elizabeth A.'  , NULL, 'Sales Manager'       , NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+    ,(2, 'Supplier B', 'Weiler'    , 'Cornelia'      , NULL, 'Sales Manager'       , NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+    ,(3, 'Supplier C', 'Kelley'    , 'Madeleine'     , NULL, 'Sales Representative', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+    ,(4, 'Supplier D', 'Sato'      , 'Naoki'         , NULL, 'Marketing Manager'   , NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+    ,(5, 'Supplier E', 'Hernandez-Echevarria','Amaya', NULL, 'Sales Manager'       , NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+    ,(6, 'Supplier F', 'Hayakawa'  , 'Satomi'        , NULL, 'Marketing Assistant' , NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+    ,(7, 'Supplier G', 'Glasson'   , 'Stuart'        , NULL, 'Marketing Manager'   , NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+    ,(8, 'Supplier H', 'Dunton'    , 'Bryn Paul'     , NULL, 'Sales Representative', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+    ,(9, 'Supplier I', 'Sandberg'  , 'Mikael'        , NULL, 'Sales Manager'       , NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+    ,(10,'Supplier J', 'Sousa'     , 'Luis'          , NULL, 'Sales Manager'       , NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 /* shippers */
-INSERT INTO `shippers` (`id`, `company`, `last_name`, `first_name`, `email_address`, `job_title`, `business_phone`, `home_phone`, `mobile_phone`, `fax_number`, `address`, `city`, `state_province`, `zip_postal_code`, `country_region`, `web_page`, `notes`, `attachments`) VALUES 
-     (1, 'Shipping Company A', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '123 Any Street', 'Memphis', 'TN', '99999', 'USA', NULL, NULL, '')
-    ,(2, 'Shipping Company B', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '123 Any Street', 'Memphis', 'TN', '99999', 'USA', NULL, NULL, '')
-    ,(3, 'Shipping Company C', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '123 Any Street', 'Memphis', 'TN', '99999', 'USA', NULL, NULL, '');
+INSERT INTO shippers (id, company, last_name, first_name, email_address, job_title, business_phone, home_phone, mobile_phone, fax_number, address, city, state_province, zip_postal_code, country_region, web_page, notes) VALUES
+     (1, 'Shipping Company A', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '123 Any Street', 'Memphis', 'TN', '99999', 'USA', NULL, NULL)
+    ,(2, 'Shipping Company B', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '123 Any Street', 'Memphis', 'TN', '99999', 'USA', NULL, NULL)
+    ,(3, 'Shipping Company C', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '123 Any Street', 'Memphis', 'TN', '99999', 'USA', NULL, NULL);
 
 /* inventory_transaction_types */
-INSERT INTO `inventory_transaction_types` (`id`, `type_name`) VALUES 
+INSERT INTO inventory_transaction_types (id, type_name) VALUES
     (1, 'Purchased'),
     (2, 'Sold'),
     (3, 'On Hold'),
     (4, 'Waste');
 
 /* order_details_status - None, Allocated, Invoiced,Shipped, On Order, No Stock */
-INSERT INTO `order_details_status` (`id`, `status_name`) VALUES 
+INSERT INTO order_details_status (id, status_name) VALUES
      (0, 'None')
     ,(1, 'Allocated')
     ,(2, 'Invoiced')
@@ -133,26 +133,26 @@ INSERT INTO `order_details_status` (`id`, `status_name`) VALUES
     ,(5, 'No Stock');
 
 /* orders_status' - New, Invoiced, Shipped, Closed */
-INSERT INTO `orders_status` (`id`, `status_name`) VALUES 
+INSERT INTO orders_status (id, status_name) VALUES
      (0, 'New')
     ,(1, 'Invoiced')
     ,(2, 'Shipped')
     ,(3, 'Closed');
 
 /* orders_tax_status */
-INSERT INTO `orders_tax_status` (`id`, `tax_status_name`) VALUES 
+INSERT INTO orders_tax_status (id, tax_status_name) VALUES
      (0, 'Tax Exempt')
     ,(1, 'Taxable');
 
 /* purchase_order_status */
-INSERT INTO `purchase_order_status` (`id`, `status`) VALUES 
+INSERT INTO purchase_order_status (id, status) VALUES
      (0, 'New')
     ,(1, 'Submitted')
     ,(2, 'Approved')
     ,(3, 'Closed');
 
 /* orders */
-INSERT INTO `orders` (`id`, `employee_id`, `customer_id`, `order_date`, `shipped_date`, `shipper_id`, `ship_name`, `ship_address`, `ship_city`, `ship_state_province`, `ship_zip_postal_code`, `ship_country_region`, `shipping_fee`, `taxes`, `payment_type`, `paid_date`, `notes`, `tax_rate`, `tax_status_id`, `status_id`) VALUES 
+INSERT INTO orders (id, employee_id, customer_id, order_date, shipped_date, shipper_id, ship_name, ship_address, ship_city, ship_state_province, ship_zip_postal_code, ship_country_region, shipping_fee, taxes, payment_type, paid_date, notes, tax_rate, tax_status_id, status_id) VALUES
      (30, 9, 27, '2006-01-15', '2006-01-22', 2, 'Karen Toh'             , '789 27th Street', 'Las Vegas'     , 'NV', '99999', 'USA', 200, 0, 'Check'      , '2006-01-15', NULL, 0, NULL, 3)
     ,(31, 3, 4 , '2006-01-20', '2006-01-22', 1, 'Christina Lee'         , '123 4th Street' , 'New York'      , 'NY', '99999', 'USA', 5  , 0, 'Credit Card', '2006-01-20', NULL, 0, NULL, 3)
     ,(32, 4, 12, '2006-01-22', '2006-01-22', 2, 'John Edwards'          , '123 12th Street', 'Las Vegas'     , 'NV', '99999', 'USA', 5  , 0, 'Credit Card', '2006-01-22', NULL, 0, NULL, 3)
@@ -204,7 +204,7 @@ INSERT INTO `orders` (`id`, `employee_id`, `customer_id`, `order_date`, `shipped
 
 
 /* order_details */
-INSERT INTO `order_details` (`id`, `order_id`, `product_id`, `quantity`, `unit_price`, `discount`, `status_id`, `date_allocated`, `purchase_order_id`, `inventory_id`) VALUES 
+INSERT INTO order_details (id, order_id, product_id, quantity, unit_price, discount, status_id, date_allocated, purchase_order_id, inventory_id) VALUES
      (27, 30, 34, 100, 14    , 0, 2, NULL, 96  , 83)
     ,(28, 30, 80, 30 , 3.5   , 0, 2, NULL, NULL, 63)
     ,(29, 31, 7 , 10 , 30    , 0, 2, NULL, NULL, 64)
@@ -266,7 +266,7 @@ INSERT INTO `order_details` (`id`, `order_id`, `product_id`, `quantity`, `unit_p
 /*  End of order_details */
 
 /*  purchase_orders */
-INSERT INTO `purchase_orders` (`id`, `supplier_id`, `created_by`, `submitted_date`, `creation_date`, `status_id`, `expected_date`, `shipping_fee`, `taxes`, `payment_date`, `payment_amount`, `payment_method`, `notes`, `approved_by`, `approved_date`, `submitted_by`) VALUES 
+INSERT INTO purchase_orders (id, supplier_id, created_by, submitted_date, creation_date, status_id, expected_date, shipping_fee, taxes, payment_date, payment_amount, payment_method, notes, approved_by, approved_date, submitted_by) VALUES
      (90,  1, 2, '2006-01-14', '2006-01-22', 2, NULL, 0, 0, NULL, 0, NULL, NULL, 2, '2006-01-22', 2)
     ,(91,  3, 2, '2006-01-14', '2006-01-22', 2, NULL, 0, 0, NULL, 0, NULL, NULL, 2, '2006-01-22', 2)
     ,(92,  2, 2, '2006-01-14', '2006-01-22', 2, NULL, 0, 0, NULL, 0, NULL, NULL, 2, '2006-01-22', 2)
@@ -289,9 +289,9 @@ INSERT INTO `purchase_orders` (`id`, `supplier_id`, `created_by`, `submitted_dat
     ,(109, 2, 4, '2006-03-24', '2006-03-24', 2, NULL, 0, 0, NULL, 0, NULL, 'Purchase generated based on Order #48', 2, '2006-04-04', 4)
     ,(110, 1, 3, '2006-03-24', '2006-03-24', 2, NULL, 0, 0, NULL, 0, NULL, 'Purchase generated based on Order #49', 2, '2006-04-04', 3)
     ,(111, 1, 2, '2006-03-31', '2006-03-31', 2, NULL, 0, 0, NULL, 0, NULL, 'Purchase generated based on Order #56', 2, '2006-04-04', 2)
-    ,(140, 6, 7, '2006-04-25', '2006-04-25', 2, NULL, 0, 0, NULL, 0, NULL, NULL, 2, '2006-04-25 16', 2)
-    ,(141, 8, 7, '2006-04-25', '2006-04-25', 2, NULL, 0, 0, NULL, 0, NULL, NULL, 2, '2006-04-25 17', 2)
-    ,(142, 8, 3, '2006-04-25', '2006-04-25', 2, NULL, 0, 0, NULL, 0, 'Check'      , NULL, 2, '2006-04-25 17', 2)
+    ,(140, 6, 7, '2006-04-25', '2006-04-25', 2, NULL, 0, 0, NULL, 0, NULL, NULL, 2, '2006-04-25', 2)
+    ,(141, 8, 7, '2006-04-25', '2006-04-25', 2, NULL, 0, 0, NULL, 0, NULL, NULL, 2, '2006-04-25', 2)
+    ,(142, 8, 3, '2006-04-25', '2006-04-25', 2, NULL, 0, 0, NULL, 0, 'Check'      , NULL, 2, '2006-04-25', 2)
     ,(146, 2, 2, '2006-04-26', '2006-04-26', 1, NULL, 0, 0, NULL, 0, NULL, NULL, NULL, NULL, 2)
     ,(147, 7, 2, '2006-04-26', '2006-04-26', 1, NULL, 0, 0, NULL, 0, NULL, NULL, NULL, NULL, 2)
     ,(148, 5, 2, '2006-04-26', '2006-04-26', 1, NULL, 0, 0, NULL, 0, NULL, NULL, NULL, NULL, 2);
@@ -299,7 +299,7 @@ INSERT INTO `purchase_orders` (`id`, `supplier_id`, `created_by`, `submitted_dat
 
 
 /* inventory_transactions */
-INSERT INTO `inventory_transactions` (`id`, `transaction_type`, `transaction_created_date`, `transaction_modified_date`, `product_id`, `quantity`, `purchase_order_id`, `customer_order_id`, `comments`) VALUES 
+INSERT INTO inventory_transactions (id, transaction_type, transaction_created_date, transaction_modified_date, product_id, quantity, purchase_order_id, customer_order_id, comments) VALUES
      (35 , 1, '2006-03-22', '2006-03-22', 80, 75 , NULL, NULL, NULL)
     ,(36 , 1, '2006-03-22', '2006-03-22', 72, 40 , NULL, NULL, NULL)
     ,(37 , 1, '2006-03-22', '2006-03-22', 52, 100, NULL, NULL, NULL)
@@ -406,7 +406,7 @@ INSERT INTO `inventory_transactions` (`id`, `transaction_type`, `transaction_cre
 
 
 /* purchase_order_details  */
-INSERT INTO `purchase_order_details` (`id`, `purchase_order_id`, `product_id`, `quantity`, `unit_cost`, `date_received`, `posted_to_inventory`, `inventory_id`) VALUES 
+INSERT INTO purchase_order_details (id, purchase_order_id, product_id, quantity, unit_cost, date_received, posted_to_inventory, inventory_id) VALUES
      (238, 90 , 1 , 40 , 14, '2006-01-22', 1, 59)
     ,(239, 91 , 3 , 100, 8 , '2006-01-22', 1, 54)
     ,(240, 91 , 4 , 40 , 16, '2006-01-22', 1, 55)
@@ -465,7 +465,7 @@ INSERT INTO `purchase_order_details` (`id`, `purchase_order_id`, `product_id`, `
 /* purchase_order_details */
 
 /* invoices */
-INSERT INTO `invoices` (`id`, `order_id`, `invoice_date`, `due_date`, `tax`, `shipping`, `amount_due`) VALUES 
+INSERT INTO invoices (id, order_id, invoice_date, due_date, tax, shipping, amount_due) VALUES
      (5 , 31, '2006-03-22', NULL, 0, 0, 0)
     ,(6 , 32, '2006-03-22', NULL, 0, 0, 0)
     ,(7 , 40, '2006-03-24', NULL, 0, 0, 0)
@@ -504,7 +504,7 @@ INSERT INTO `invoices` (`id`, `order_id`, `invoice_date`, `due_date`, `tax`, `sh
 /* end of invoices */
 
 /* strings */
-INSERT INTO `strings` (`string_id`, `string_data`) VALUES 
+INSERT INTO strings (string_id, string_data) VALUES
      (2 , 'Northwind Traders')
     ,(3 , 'Cannot remove posted inventory!')
     ,(4 , 'Back ordered product filled for Order #|')
